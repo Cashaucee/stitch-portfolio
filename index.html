@@ -1,0 +1,450 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LUMINOUS | Portfolio</title>
+
+        <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cassius Reyes || Web Portfolio">
+    <meta property="og:url" content="https://cashaucee.github.io/webportfolio/">
+    <meta property="og:image" content="https://seosetups.com/wp-content/uploads/2019/06/Social-Media-Open-Graph-Illustration-1200x675.jpg">
+    <meta property="og:description" content="Welcome to my web developer portfolio! Explore my projects, skills, and experience in front-end and back-end development. Discover how I can contribute to your next project.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.svg">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#626200",
+              "surface-container-highest": "#353535",
+              "surface-container-low": "#1b1b1b",
+              "on-primary-fixed": "#1d1d00",
+              surface: "#131313",
+              "primary-container": "#FFFF00",
+              "on-secondary": "#482247",
+              "on-tertiary-fixed": "#001f24",
+              "surface-container-high": "#2a2a2a",
+              "error-container": "#93000a",
+              "tertiary-fixed": "#c0eaf2",
+              "secondary-fixed": "#ffd6f7",
+              "inverse-on-surface": "#303030",
+              outline: "#939277",
+              "on-tertiary": "#07363c",
+              "on-surface": "#e2e2e2",
+              "on-primary-container": "#000000",
+              "on-error-container": "#ffdad6",
+              "surface-container": "#1f1f1f",
+              "surface-bright": "#393939",
+              "surface-dim": "#131313",
+              "secondary-fixed-dim": "#ebb6e4",
+              "on-primary-fixed-variant": "#494900",
+              "on-tertiary-container": "#436b72",
+              "on-secondary-fixed-variant": "#61395e",
+              "on-primary": "#000000",
+              "surface-tint": "#cdcd00",
+              "secondary-container": "#633b61",
+              "tertiary-container": "#c0eaf2",
+              background: "#131313",
+              "on-secondary-container": "#dca8d5",
+              "primary-fixed": "#eaea00",
+              "outline-variant": "#484831",
+              "surface-variant": "#353535",
+              secondary: "#ebb6e4",
+              "on-background": "#e2e2e2",
+              tertiary: "#ffffff",
+              "on-tertiary-fixed-variant": "#244d53",
+              "primary-fixed-dim": "#cdcd00",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-surface": "#e2e2e2",
+              error: "#ffb4ab",
+              "on-surface-variant": "#cac8aa",
+              primary: "#FFFF00",
+              "on-error": "#690005",
+              "tertiary-fixed-dim": "#a4ced5",
+              "on-secondary-fixed": "#300d30",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Space Grotesk"],
+              body: ["Inter"],
+              label: ["Be Vietnam Pro"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .text-glow {
+        text-shadow: 0 0 15px rgba(255, 255, 0, 0.2);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen"
+  >
+    <!-- Header -->
+    <header
+      class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1
+          class="font-headline font-bold tracking-widest text-xl text-white uppercase"
+        >
+          LUMINOUS
+        </h1>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            class="text-xs font-label uppercase tracking-[0.2em] text-on-surface hover:text-primary transition-colors"
+            href="#"
+            >Work</a
+          >
+          <a
+            class="text-xs font-label uppercase tracking-[0.2em] text-on-surface hover:text-primary transition-colors"
+            href="#"
+          >
+            Expertise
+          </a>
+          <a
+            class="text-xs font-label uppercase tracking-[0.2em] text-on-surface hover:text-primary transition-colors"
+            href="#"
+            >About</a
+          >
+          <a
+            class="text-xs font-label uppercase tracking-[0.2em] text-on-surface hover:text-primary transition-colors"
+            href="#"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <button aria-label="Open Menu" class="md:hidden">
+            <span class="material-symbols-outlined text-white" data-icon="menu"
+              >menu</span
+            >
+          </button>
+          <span
+            class="material-symbols-outlined text-white hidden md:block"
+            data-icon="shopping_bag"
+            >shopping_bag</span
+          >
+        </div>
+      </div>
+    </header>
+    <main class="pt-24 pb-24">
+      <!-- Hero Section (Based on Wireframe Top Section) -->
+      <section
+        class="px-6 py-16 md:py-24 max-w-7xl mx-auto border-b border-white/5"
+      >
+        <div class="max-w-2xl">
+          <h2
+            class="font-headline text-[3.5rem] md:text-[5rem] leading-[1.05] font-bold tracking-tight text-white mb-8"
+          >
+            LUMINOUS<br />NOIR.
+          </h2>
+          <p
+            class="text-on-surface-variant text-lg md:text-xl leading-relaxed mb-10 opacity-80"
+          >
+            Curating digital experiences through minimal aesthetics and
+            high-performance engineering for the modern web.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              aria-label="View Projects"
+              class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold text-xs tracking-[0.2em] transition-all hover:bg-white hover:text-black"
+            >
+              VIEW PROJECTS
+            </button>
+            <a
+                aria-label="Download Resume"
+                class="border border-white/20 text-white px-10 py-4 rounded-lg font-bold text-xs tracking-[0.2em] transition-all hover:bg-white/5 flex items-center justify-center gap-2"
+                href="./CassiusReyes_Resume.pdf" download="CassiusReyes_Resume.pdf"
+            >
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="download"
+                >download</span
+              >
+              DOWNLOAD RESUME
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Expertise Section (Based on Wireframe Middle Section) -->
+      <section class="px-6 py-20 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Expertise 1 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-24 h-24 rounded-full border border-white/10 flex items-center justify-center mb-6 bg-surface-container-low transition-colors hover:border-primary/50"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-4xl"
+                data-icon="ink_pen"
+                >ink_pen</span
+              >
+            </div>
+            <h3
+              class="font-headline text-lg font-bold text-white mb-3 uppercase tracking-wider"
+            >
+              Design Strategy
+            </h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-xs">
+              Crafting intentional visual languages that communicate brand
+              values through minimalism.
+            </p>
+          </div>
+          <!-- Expertise 2 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-24 h-24 rounded-full border border-white/10 flex items-center justify-center mb-6 bg-surface-container-low transition-colors hover:border-primary/50"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-4xl"
+                data-icon="code"
+                >code</span
+              >
+            </div>
+            <h3
+              class="font-headline text-lg font-bold text-white mb-3 uppercase tracking-wider"
+            >
+              Development
+            </h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-xs">
+              Building high-performance, accessible, and scalable web
+              architectures with precision.
+            </p>
+          </div>
+          <!-- Expertise 3 -->
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-24 h-24 rounded-full border border-white/10 flex items-center justify-center mb-6 bg-surface-container-low transition-colors hover:border-primary/50"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-4xl"
+                data-icon="monitoring"
+                >monitoring</span
+              >
+            </div>
+            <h3
+              class="font-headline text-lg font-bold text-white mb-3 uppercase tracking-wider"
+            >
+              Brand Growth
+            </h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-xs">
+              Analyzing user behavior to iterate and scale digital products for
+              global impact.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Selected Work Section (Based on Wireframe Bottom Section) -->
+      <section class="px-6 py-20 bg-surface-container-lowest">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4"
+          >
+            <h2
+              class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-white"
+            >
+              SELECTED WORK
+            </h2>
+            <span
+              class="font-label text-xs uppercase tracking-[0.3em] text-primary"
+              >COLLECTION 2023 - 24</span
+            >
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Project 1 -->
+            <article class="group">
+              <div
+                class="aspect-[3/4] bg-surface-container rounded-lg overflow-hidden mb-6 relative"
+              >
+                <img
+                  alt="Project Neon"
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN6qu95UFTnofOK4ezVudXOEnUFqwZm2B1eSrvu9Re3nUJZWU4WFfR0DZBjk1-bRGyd7ucYrVrbGz3UOKGIyJvcUZrMaN6QyuWqziE6DwFzMMJQ4YCM8P_fAZiA8yQMA2PAt7KK4M_r5rPNrX0pRDiyXW4Q4UXCSCUCluBYE5qRaZODDI2gJ2QVoTFleWzSGHObfsuteetKU7x84PuSqXejm8K_rhm60SDfx3KnrUehX0LOlrdoIO48UitCeCgn1wOfG3RCOTXXg"
+                />
+                <div
+                  class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"
+                ></div>
+              </div>
+              <h4
+                class="font-headline text-lg font-bold text-white mb-1 uppercase tracking-wider"
+              >
+                Neon Symphony
+              </h4>
+              <p
+                class="text-on-surface-variant text-xs uppercase tracking-widest opacity-60"
+              >
+                Audiovisual Experience
+              </p>
+            </article>
+            <!-- Project 2 -->
+            <article class="group">
+              <div
+                class="aspect-[3/4] bg-surface-container rounded-lg overflow-hidden mb-6 relative"
+              >
+                <img
+                  alt="Project Monolith"
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXM72G1yMsS59RJ31CssbNHrfe_cR0Ngq1RZDde2a4gl2q3gch7nsi67ZUH53a43xTrVy4kfA8Ycnz3dTxno59FQm-QJblYu7JeF6N5aLo-N6LqQ2W3txbpNBS0zE_y_BqfjIA20rniREwy18l6FnltqRdaDr8MMdSXsx2UWXC2PsqO5Lw6f84p6EbeId1L-_X-8G42a0lb-Dk0wAehJB_iQuHyh1iXBaFTs8ErNvK7-ubKYeZa6-_NouB0C9xgdO8obx20GUs6w"
+                />
+                <div
+                  class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"
+                ></div>
+              </div>
+              <h4
+                class="font-headline text-lg font-bold text-white mb-1 uppercase tracking-wider"
+              >
+                Urban Monolith
+              </h4>
+              <p
+                class="text-on-surface-variant text-xs uppercase tracking-widest opacity-60"
+              >
+                Architecture Series
+              </p>
+            </article>
+            <!-- Project 3 -->
+            <article class="group">
+              <div
+                class="aspect-[3/4] bg-surface-container rounded-lg overflow-hidden mb-6 relative"
+              >
+                <img
+                  alt="Project Kinetic"
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHpS6mL3JXtobWncKUXUGTvZABLa5HB3TBhln5YGzL0BI9Po121VgAysvbvpuapadyRzrnQfLvcq6z1El4mqsUp3p_LoidXc-rLgfBhFDaa8VKIAMT4uRUGsRdPeRP08zoTwcykqx6cxhy-Ibo9PnyVUbtjQQ0eOPK22vAxoDtetHYId59UBgDi0I9rcg-i3zktLNC2tVqgN6hPCSOR_Om1EX0iKxnF_AartlVFjr1sfhqbajKaXSeUm7irU7CtVtQ9Xkw2ryJqg"
+                />
+                <div
+                  class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"
+                ></div>
+              </div>
+              <h4
+                class="font-headline text-lg font-bold text-white mb-1 uppercase tracking-wider"
+              >
+                Kinetic Data
+              </h4>
+              <p
+                class="text-on-surface-variant text-xs uppercase tracking-widest opacity-60"
+              >
+                Interface Design
+              </p>
+            </article>
+            <!-- Project 4 (Duplicate for Grid) -->
+            <article class="group">
+              <div
+                class="aspect-[3/4] bg-surface-container rounded-lg overflow-hidden mb-6 relative"
+              >
+                <img
+                  alt="Project Void"
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN6qu95UFTnofOK4ezVudXOEnUFqwZm2B1eSrvu9Re3nUJZWU4WFfR0DZBjk1-bRGyd7ucYrVrbGz3UOKGIyJvcUZrMaN6QyuWqziE6DwFzMMJQ4YCM8P_fAZiA8yQMA2PAt7KK4M_r5rPNrX0pRDiyXW4Q4UXCSCUCluBYE5qRaZODDI2gJ2QVoTFleWzSGHObfsuteetKU7x84PuSqXejm8K_rhm60SDfx3KnrUehX0LOlrdoIO48UitCeCgn1wOfG3RCOTXXg"
+                />
+                <div
+                  class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"
+                ></div>
+              </div>
+              <h4
+                class="font-headline text-lg font-bold text-white mb-1 uppercase tracking-wider"
+              >
+                Noir Void
+              </h4>
+              <p
+                class="text-on-surface-variant text-xs uppercase tracking-widest opacity-60"
+              >
+                Digital Art
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Mobile Bottom Navigation (Persistent) -->
+    <nav
+      class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-3 pb-8 px-4 bg-background/90 backdrop-blur-2xl z-50 md:hidden border-t border-white/5"
+    >
+      <div
+        aria-label="Navigate to Work"
+        class="flex flex-col items-center justify-center text-primary font-bold"
+      >
+        <span
+          class="material-symbols-outlined mb-1"
+          data-icon="grid_view"
+          style="font-variation-settings: &quot;FILL&quot; 1"
+          >grid_view</span
+        >
+        <span class="font-label text-[10px] uppercase tracking-widest"
+          >Work</span
+        >
+      </div>
+      <div
+        aria-label="Navigate to Skills"
+        class="flex flex-col items-center justify-center text-white/40"
+      >
+        <span class="material-symbols-outlined mb-1" data-icon="auto_awesome"
+          >auto_awesome</span
+        >
+        <span class="font-label text-[10px] uppercase tracking-widest"
+          >Skills</span
+        >
+      </div>
+      <div
+        aria-label="Navigate to Bio"
+        class="flex flex-col items-center justify-center text-white/40"
+      >
+        <span class="material-symbols-outlined mb-1" data-icon="person"
+          >person</span
+        >
+        <span class="font-label text-[10px] uppercase tracking-widest"
+          >Bio</span
+        >
+      </div>
+      <div
+        aria-label="Navigate to Mail"
+        class="flex flex-col items-center justify-center text-white/40"
+      >
+        <span class="material-symbols-outlined mb-1" data-icon="mail"
+          >mail</span
+        >
+        <span class="font-label text-[10px] uppercase tracking-widest"
+          >Mail</span
+        >
+      </div>
+    </nav>
+  </body>
+</html>
